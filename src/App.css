@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+.container{
+  display: grid;
+  grid-template-columns: auto auto ;
+  margin-top: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.animelist {
+  min-width: 30%;
+  height: 240px;
+  flex: 1 1 auto;
+  display: flex; 
+  /* flex-direction: column;    */
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 2rem;
+  margin: 0 7.5px 15px;
+  overflow: hidden;
+}
+.animelist:hover {
+  cursor: pointer;
+}
+.animelist:hover .background-image {
+  
+  transform: scale(1.1);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+.animelist:hover .content {
+  opacity: 0.9;
+}
+/* .menu-item.large {
+  height: 380px;
+} */
+.animelist:first-child {
+  margin-right: 7.5px;
+}
+.animelist:last-child {
+  margin-left: 7.5px;
+}
+.animelist .background-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/* content and title */
+.animelist .content {
+  width: 30%;
+  /* color: gray; */
+  height: 80px;
+  padding: 0 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 1px solid black;
+  background-color: white;
+  opacity: 0.7;
+  position: absolute;
+}
+.animelist  .content .title {
+  font-weight: bold;
+  margin: 0 6px 0;
+  font-size: 22px;
+  color: #4a4a4a;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
