@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/loopin/static/css/main.569f0fd0.css",
+    "main.js": "/loopin/static/js/main.4e6b0430.js",
+    "index.html": "/loopin/index.html",
+    "main.569f0fd0.css.map": "/loopin/static/css/main.569f0fd0.css.map",
+    "main.4e6b0430.js.map": "/loopin/static/js/main.4e6b0430.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.569f0fd0.css",
+    "static/js/main.4e6b0430.js"
+  ]
+}
